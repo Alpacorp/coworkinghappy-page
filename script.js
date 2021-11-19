@@ -2,7 +2,7 @@
 
 window.addEventListener('DOMContentLoaded', () => {
     const loading = document.getElementById('loading');
-    setTimeout( () => {
+    setTimeout(() => {
         loading.setAttribute('class', 'hide');
     }, 1000)
 })
@@ -18,11 +18,16 @@ window.addEventListener('scroll', () => {
     }
 })
 
+// footer
+
+const subfooter = document.getElementById("subfooter");
+subfooter.innerHTML = `Coworking Happy | Todos los derechos reservados ${new Date().getFullYear()} | Facatativá Cundinamarca`;
+
 // spaces cards
 
 const panels = document.querySelectorAll('.panel');
 
-panels.forEach( panel => {
+panels.forEach(panel => {
     panel.addEventListener('click', () => {
         removeActiveClass();
         panel.classList.add('active');
@@ -30,7 +35,7 @@ panels.forEach( panel => {
 })
 
 const removeActiveClass = () => {
-    panels.forEach( panel => {
+    panels.forEach(panel => {
         panel.classList.remove('active');
     })
 }
@@ -42,7 +47,7 @@ const description = document.querySelectorAll('.description');
 const openInfo = document.querySelectorAll('.openInfo');
 const inactive = document.querySelectorAll('.inactive');
 
-closeInfo.forEach( close => {
+closeInfo.forEach(close => {
     close.addEventListener('click', (e) => {
         const targetCard = e.target.name
         hideDescription(targetCard);
@@ -50,7 +55,7 @@ closeInfo.forEach( close => {
     })
 })
 
-openInfo.forEach( open => {
+openInfo.forEach(open => {
     open.addEventListener('click', (e) => {
         const targetCard = e.target.name;
         showDescription(targetCard);
@@ -83,7 +88,7 @@ const showOpen = (target) => {
 
 const buttons = document.querySelectorAll('.ripple');
 
-buttons.forEach( button => {
+buttons.forEach(button => {
     button.addEventListener('click', function (e) {
         const x = e.clientX;
         const y = e.clientY;
@@ -113,7 +118,7 @@ buttons.forEach( button => {
 
 const toggles = document.querySelectorAll('.faq-toggle');
 
-toggles.forEach( toggle => {
+toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
         toggle.parentNode.classList.toggle('active');
     })

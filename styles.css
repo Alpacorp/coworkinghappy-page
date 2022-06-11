@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 :root {
-    --yellowColor: #ffde00;
-    --blueColor: #35a9e0;
-    --greenColor: #96c122;
-    --salmonColor: #e94e1e;
-    --purpleColor: #672783;
+    --yellowColor: #EDB62B;
+    --blueColor: #6EC1E4;
+    --greenColor: #61CE70;
+    --salmonColor: #DE5E17;
+    --purpleColor: #662D91;
     --redColor: #e30d18;
-    --mainColor: #1d2a4d;
+    --mainColor: #172447;
     --pinkColor: rgba(233, 182, 134, 0.9);
     --whiteColor: #fff;
     --blackColor: rgb(214, 159, 159);
@@ -34,7 +34,6 @@ body {
     transition: all 3s ease-in;
     z-index: 3;
 }
-
 
 .loading img {
     width: 200px;
@@ -596,8 +595,6 @@ footer {
 .subFooter {
     padding: 20px;
 }
-
-
 
 @media screen and (max-width: 800px) {
     .main.no-active {

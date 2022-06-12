@@ -74,8 +74,10 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.nav .container .cobranding {
+.cobranding {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 }

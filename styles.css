@@ -199,7 +199,7 @@ body {
     font-size: 30px;
 }
 
-.wrapper .title::after {
+/* .wrapper .title::after {
     content: "";
     background-image: url('./assets/smile.png');
     background-size: contain;
@@ -207,7 +207,7 @@ body {
     position: absolute;
     height: 10px;
     width: 50px;
-}
+} */
 
 .wrapper .content h3 {
     margin: 20px 0;

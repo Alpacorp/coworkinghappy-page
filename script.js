@@ -121,3 +121,25 @@ toggles.forEach((toggle) => {
     toggle.parentNode.classList.toggle("active");
   });
 });
+
+// Observer player video Croma
+
+const videoCroma = document.getElementById("videoCroma");
+
+const callback = (entries) => {
+  if (entries[0].isIntersecting) {
+    videoCroma.play();
+  } else {
+    videoCroma.pause();
+  }
+};
+
+const options = {
+  root: null,
+  rootMargin: "0px 0px 0px 0px",
+  treshold: 1,
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+observer.observe(videoCroma);

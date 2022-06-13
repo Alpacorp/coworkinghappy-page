@@ -252,6 +252,10 @@ body {
     margin: 50px 0;
 }
 
+.video iframe {
+    display: none;
+}
+
 .panel {
     background-size: cover;
     background-position: center;
@@ -646,6 +650,16 @@ footer {
 
     .contactInfo .info {
         width: 100%;
+    }
+
+    .video video {
+        display: none;
+    }
+
+    .video iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 
     .footer .content img {
